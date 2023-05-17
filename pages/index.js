@@ -54,7 +54,7 @@ export default function Home({ rooms }) {
 
 Home.getInitialProps = async (currentPage) => {
   const res = await fetch(
-    `http://localhost:3000/api/rooms?page=${currentPage}&location=${location}`
+    `http://localhost:3000/api/rooms?page=${currentPage}`
   );
   const { data } = await res.json();
 

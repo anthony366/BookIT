@@ -8,17 +8,6 @@ const Pagination = ({ items, pageSize, currentPage, onPageChange }) => {
     <>
       <div>
         <ul className="pagination">
-          {/* <li className="page-item">
-            <a
-              style={{ cursor: "pointer" }}
-              onClick={(page) => onPageChange(page)}
-              className="page-link"
-              tabindex="-1"
-            >
-              <span aria-hidden="true">&laquo;</span>
-              <span class="sr-only">Previous</span>
-            </a>
-          </li> */}
           {pages.map((page) => (
             <li
               key={page}
@@ -35,16 +24,6 @@ const Pagination = ({ items, pageSize, currentPage, onPageChange }) => {
               </a>
             </li>
           ))}
-          {/* <li className="page-item">
-            <a
-              style={{ cursor: "pointer" }}
-              onClick={(page) => onPageChange(page)}
-              className="page-link"
-            >
-              <span aria-hidden="true">&raquo;</span>
-              <span class="sr-only">Next</span>
-            </a>
-          </li> */}
         </ul>
       </div>
     </>
